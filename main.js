@@ -5,7 +5,6 @@ $(function() {
         document.body.style.background = cor;
 
     $.getJSON("frases.json", function(data) {
-        console.log(data.frases.length);
         var listaFrases = data.frases;
         var fraseRandom = listaFrases[Math.floor(Math.random()*listaFrases.length)];
         document.getElementById("posts").innerHTML = fraseRandom.poesia;
